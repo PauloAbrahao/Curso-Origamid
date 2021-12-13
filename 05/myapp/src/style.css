@@ -30,7 +30,7 @@ button {
 h1,
 h2,
 h3 {
-  font-family: var(--font-title);
+  font-family: var('Segoe UI');
 }
 
 h1,
@@ -113,8 +113,12 @@ hr {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;  
+  align-items: center;
 }
 
-.nome {
-  
+.name, 
+.password {
+  width: 30%;
 }
+
