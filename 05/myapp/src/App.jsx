@@ -29,6 +29,10 @@ function App() {
     setValues({ ...values, [prop]: event.target.value });
   };
 
+  const handleClick = ({ target }) => {
+    setNome(target.value);
+  };
+
   const handleClickShowPassword = () => {
     setValues({
       ...values,
@@ -69,6 +73,7 @@ function App() {
           label="Name"
           variant="outlined"
           className="name"
+          onChange={handleClick}
         />
 
         <FormControl
@@ -117,6 +122,7 @@ function App() {
           <a> Don't have an account? Sign Up </a>
         </div>
       </Box>
+      <p>{nome}</p>
     </>
   );
 }
