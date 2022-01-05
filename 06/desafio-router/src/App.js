@@ -10,12 +10,13 @@ import Produto from "./components/Produto";
 import Contato from "./components/Contato";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Teste from "./components/Teste";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <Header />  
         <div className="content">
           <Routes>
             <Route path="/" element={<Produtos />} />
